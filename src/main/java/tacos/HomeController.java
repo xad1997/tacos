@@ -3,12 +3,14 @@ package tacos;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller            // <1>
+// 控制器
+@Controller
 public class HomeController {
-
-  @GetMapping("/")     // <2>
+  // 处理对根路径"/"的get请求
+  @GetMapping("/")
   public String home() {
-    return "home";     // <3>
+    // 返回视图名
+    return "home";
   }
 
 }
